@@ -67,22 +67,22 @@ class Buttons extends React.Component {
 			<div className="center">
 				<ButtonToolbar>
 					{/* https://www.w3schools.com/bootstrap/bootstrap_buttons.asp */}
-					<button className="btn btn-primary" onClick={this.props.playButton}>
+					<button className="btn-primary" onClick={this.props.playButton}>
 						Play
 					</button>
-					<button className="btn btn-primary" onClick={this.props.pauseButton}>
+					<button className="btn-primary" onClick={this.props.pauseButton}>
 						Pause
 					</button>
-					<button className="btn btn-primary" onClick={this.props.clear}>
+					<button className="btn-primary" onClick={this.props.clear}>
 						Clear
 					</button>
-					<button className="btn btn-primary" onClick={this.props.slow}>
+					<button className="btn-primary" onClick={this.props.slow}>
 						Slow
 					</button>
-					<button className="btn btn-primary" onClick={this.props.fast}>
+					<button className="btn-primary" onClick={this.props.fast}>
 						Fast
 					</button>
-					<button className="btn btn-primary" onClick={this.props.seed}>
+					<button className="btn-primary" onClick={this.props.seed}>
 						Seed
 					</button>
 					<DropdownButton
