@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {ButtonToolbar, DropdownButton, Dropdown, Button} from 'react-bootstrap';
+import {ButtonToolbar, DropdownButton, Dropdown} from 'react-bootstrap';
 
 
 class Box extends React.Component {
@@ -66,22 +66,23 @@ class Buttons extends React.Component {
 		return (
 			<div className="center">
 				<ButtonToolbar>
-					<button className="btn btn-default" onClick={this.props.playButton}>
+					{/* https://www.w3schools.com/bootstrap/bootstrap_buttons.asp */}
+					<button className="btn btn-primary" onClick={this.props.playButton}>
 						Play
 					</button>
-					<button className="btn btn-default" onClick={this.props.pauseButton}>
+					<button className="btn btn-primary" onClick={this.props.pauseButton}>
 						Pause
 					</button>
-					<button className="btn btn-default" onClick={this.props.clear}>
+					<button className="btn btn-primary" onClick={this.props.clear}>
 						Clear
 					</button>
-					<button className="btn btn-default" onClick={this.props.slow}>
+					<button className="btn btn-primary" onClick={this.props.slow}>
 						Slow
 					</button>
-					<button className="btn btn-default" onClick={this.props.fast}>
+					<button className="btn btn-primary" onClick={this.props.fast}>
 						Fast
 					</button>
-					<button className="btn btn-default" onClick={this.props.seed}>
+					<button className="btn btn-primary" onClick={this.props.seed}>
 						Seed
 					</button>
 					<DropdownButton
